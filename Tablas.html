@@ -1,10 +1,10 @@
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PRACTICA DE FUNDAMENTOS EN HTML</title>
+    <title>Document</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -13,18 +13,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+
 </head>
 
 <body>
-
     <div class="navbar-wrapper">
         <div class="container">
             <nav class="navbar navbar-inverse navbar-static-top">
                 <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Inicio</a></li>
-                            <li><a href="Tablas.html">Tablas</a></li>
+                            <li><a href="index.html">Inicio</a>
+                            </li>
+                            <li class="active"><a href="Tablas.html">Tablas</a></li>
                             <li><a href="Video.html">Video</a></li>
                             <li><a href="Formulario.html">Formulario</a></li>
                         </ul>
@@ -65,27 +75,42 @@
             </a>
         </div>
     </div>
-
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Menu</h2>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Tablas.html">Tablas</a></li>
-                    <li><a href="Video.html">Video</a></li>
-                    <li><a href="Formulario.html">Formulario</a></li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <p>Actividad numero 4</p>
-                <p>Desarrollo de una aplicaion con html</p>
-                <p>
-                    Herramientas de programacion 3
-                </p>
-                <img src="https://images4.sw-cdn.net/product/picture/710x528_14728077_12767_1485489795.jpg" class="rounded float-left" width="355" height="264">
-            </div>
-        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <h3>Tabla de ejemplo</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Correo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>18</td>
+                    <td>56416541</td>
+                    <td>j.gil1591@pascualbravo.edu.co</td>
+                </tr>
+                <tr>
+                    <td>Esteban</td>
+                    <td>15</td>
+                    <td>12341432</td>
+                    <td>12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Monica</td>
+                    <td>20</td>
+                    <td>56416541</td>
+                    <td>test@hello.com</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <div class="container">
@@ -101,6 +126,6 @@
             </div>
         </footer>
     </div>
-
 </body>
+
 </html>
